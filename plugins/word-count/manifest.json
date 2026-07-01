@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "word-count",
+  "name": "Счётчик слов",
+  "description": "Пример внешнего плагина для каталога CopyEditor.",
+  "version": "0.1.0",
+  "author": "CopyEditor",
+  "category": "editor",
+  "files": ["manifest.json"],
+  "entry": "./index.js"
+}

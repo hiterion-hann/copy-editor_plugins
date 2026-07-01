@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-07-01",
+  "plugins": [
+    {
+      "id": "word-count",
+      "name": "Счётчик слов",
+      "description": "Пример внешнего плагина: показывает статистику текста в панели (заготовка для будущей загрузки кода).",
+      "version": "0.1.0",
+      "author": "CopyEditor",
+      "category": "editor",
+      "path": "plugins/word-count"
+    }
+  ]
+}
