@@ -2,10 +2,14 @@
   "schemaVersion": 1,
   "id": "word-count",
   "name": "Счётчик слов",
-  "description": "Пример внешнего плагина для каталога CopyEditor.",
-  "version": "0.1.0",
+  "description": "Статистика текущего документа: слова, символы, абзацы, время чтения.",
+  "version": "0.2.0",
   "author": "CopyEditor",
   "category": "editor",
   "files": ["manifest.json", "index.mjs"],
-  "entry": "./index.mjs"
+  "entry": "./index.mjs",
+  "features": {
+    "toolbar": true,
+    "workspaceView": true
+  }
 }
