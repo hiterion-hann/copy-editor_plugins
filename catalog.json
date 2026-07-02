@@ -10,6 +10,15 @@
       "author": "CopyEditor",
       "category": "editor",
       "path": "plugins/word-count"
+    },
+    {
+      "id": "task-calendar",
+      "name": "Календарь задач",
+      "description": "Месячный календарь с задачами по дням и привязкой к документам vault.",
+      "version": "1.0.0",
+      "author": "CopyEditor",
+      "category": "integration",
+      "path": "plugins/task-calendar"
     }
   ]
 }

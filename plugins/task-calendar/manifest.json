@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "task-calendar",
+  "name": "Календарь задач",
+  "description": "Месячный календарь с задачами по дням. Можно привязать задачу к документу vault.",
+  "version": "1.0.0",
+  "author": "CopyEditor",
+  "category": "integration",
+  "files": ["manifest.json", "index.mjs", "styles.css"],
+  "entry": "./index.mjs",
+  "features": {
+    "toolbar": true,
+    "workspaceView": true
+  }
+}

@@ -6,6 +6,6 @@
   "version": "0.1.0",
   "author": "CopyEditor",
   "category": "editor",
-  "files": ["manifest.json"],
-  "entry": "./index.js"
+  "files": ["manifest.json", "index.mjs"],
+  "entry": "./index.mjs"
 }

@@ -1,16 +1,47 @@
-﻿# copy-editor_plugins
+﻿# Каталог плагинов CopyEditor
 
-Каталог плагинов для [CopyEditor](https://github.com/hiterion-hann/copy-editor).
+Репозиторий внешних плагинов для CopyEditor.
 
 ## Структура
 
-- `catalog.json` — список плагинов
-- `plugins/<id>/manifest.json` — описание плагина
+```
+catalog.json
+plugins/
+  task-calendar/
+    manifest.json
+    index.mjs
+    styles.css
+```
 
-## Добавление плагина
+## Плагины
 
-1. Создайте `plugins/my-plugin/manifest.json` (schemaVersion: 1)
-2. Добавьте запись в `catalog.json`
-3. Закоммитьте и запушьте в `main`
+| ID | Описание |
+|----|----------|
+| `task-calendar` | Месячный календарь с задачами по дням, привязка к документам vault |
+| `word-count` | Пример минимального плагина |
 
-В приложении: **Настройки → Расширения → Открыть каталог → Обновить каталог**.
+## Подключение
+
+1. Настройки → Расширения → **Открыть каталог**
+2. URL: `https://github.com/hiterion-hann/copy-editor_plugins`
+3. **Обновить каталог** → установить плагин → включить
+
+Данные `task-calendar` хранятся в `vault/.copyeditor/plugin-data/task-calendar.json`.
+
+## manifest.json
+
+- `entry` — точка входа (`index.mjs`)
+- `files` — файлы для копирования при установке
+- `features.workspaceView` / `features.toolbar` — UI в приложении
+
+## API плагина
+
+```js
+export async function activate(api) {
+  api.ui.registerWorkspace({
+    title: 'Заголовок',
+    toolbarLabel: 'Кнопка',
+    mount(root) { /* DOM */ }
+  })
+}
+```
